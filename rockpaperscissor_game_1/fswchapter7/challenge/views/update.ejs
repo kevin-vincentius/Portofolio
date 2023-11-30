@@ -1,0 +1,99 @@
+
+<%- include("partials/navigation") -%>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">User Update</h2>
+
+        <form action="/dashboard/update/<%= id %>" method="POST">
+            <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" value="<%= username %>" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="nama">Full Name</label>
+            <input type="text" class="form-control" id="nama" name="nama" value="<%= nama %>" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="<%= email %>" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="<%= password %>"  required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="choiceDropdown">Role:</label>
+            <select class="form-control dropdown dropdown-toggle" name="role" data-bs-toggle="dropdown" id="choiceDropdown" valuerole="<%= role %>">
+                <option value="superadmin" option>Super Admin</option>
+                <option value="user" option>User</option>
+                <option value="support" option >Support</option>
+            </select>
+            </div>
+            <Br>
+            <div class="form-group ">
+                <label>Gender:</label>
+                <div class="d-flex ">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="male">
+                    <label class="form-check-label" for="male">
+                    Male
+                    </label>
+                </div>
+                <div class="form-check ms-5">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="female">
+                    <label class="form-check-label" for="female">
+                    Female
+                    </label>
+                </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+            <label for="dateofbirth">Date of Birth</label>
+            <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required value="<%= date_of_birth %>">
+            </div>
+            <br>
+
+            <div class="form-group">
+            <label for="country_of_birth">Country of Birth</label>
+            <input type="text" class="form-control" id="country_of_birth" name="country_of_birth" required value="<%= country_of_birth %>">
+            </div>
+            <br>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-block">Update</button>
+            </div>
+        </form>
+    </div>
+  </div>  
+</div>
+
+</body>
+<!-- <script>
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, "0");
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    }
+    formatDate(date_of_birth)
+
+    const valueRole = document.querySelector("[valuerole]")
+    const options = document.querySelectorAll("[option]")
+
+    for (let i = 0; i <= options.length; i++){
+        if(options[i].value === valueRole){
+            options[i].setAttribute('selected')
+        } else {
+            options[i].removeAttribute('selected')
+        }
+    }
+</script> -->
+</html>

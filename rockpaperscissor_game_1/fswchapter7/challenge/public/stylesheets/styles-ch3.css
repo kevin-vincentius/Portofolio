@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+h1{
+    font-family: 'BEBAS NEUE', sans-serif !important;
+    font-weight: BOLD !important;
+    font-size: 80px !important;
+}
+
+h2{
+    font-family: 'BEBAS NEUE', sans-serif !important;
+    font-weight: BOLD !important;
+    font-size: 36px !important;
+}
+
+h3{
+    font-family: 'BEBAS NEUE', sans-serif !important;
+    font-weight: BOLD !important;
+    font-size: 24px !important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+}
+
+.p1{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+}
+
+.p2{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.fontbutton{
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: BOLD !important;
+
+}
+
+.fontnav{
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: BOLD !important;
+}
+
+.banner-image{
+    background-image: url(../images/main-bg.jpg);
+    /* background-color: black; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.bg-black-nav{
+    background-color: RGBA(0,0,0, var(--bs-bg-opacity, 0.6)) !important;
+}
+
+.navbar-brand{
+    margin-left: 100px;
+}
+
+.me-5{
+    margin-right: 5rem ;
+}
+
+.download-btn {
+    background-color: darkorange;
+    margin-top: 3%;
+}
+
+.content{
+    width: 100%;
+    display: block;
+}
+
+.test{
+    background-color: blanchedalmond;
+
+}
+
+.test2{
+    background-color: lightblue;
+}
+
+.width-main-button{
+    width: 12% !important;
+    padding: 10px !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+.gamechoice-img{
+    background-image: url(../images/the-games-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.block{
+    display: block !important;
+}
+
+.top-75{
+    top: 90% !important
+}
+
+.unbold{
+    font-weight: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    /* letter-spacing: 5px;  */
+}
+
+.row{
+    padding-left: 5rem !important;
+    padding-top: 10rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.vh-img{
+    height: 500px;
+    width: 80%;
+    left: 10% !important;
+    position: relative;
+}
+
+.test3{
+    background-color: blueviolet
+}
+
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 10%;
+}
+
+.features-img{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/features.jpg);
+    /* background-color: black; */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.fs-1{
+    font-size: 80px !important ;
+}
+
+.rem{
+    font-size: 2rem !important;
+}
+
+.rem-display{
+    font-size: 5rem !important;
+}
+
+.mt-auto{
+    margin-top: 1000px !important;
+}
+
+.col-lg-4{
+    left:50% !important
+}
+
+.row{
+    display: flex;
+    padding-top: 0 !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#features-content{
+    margin-right: 10%;
+    margin-left: 5%;
+    position: relative;
+    left: 0% !important;
+    right: 0% !important;
+    top: 30% !important;
+}
+
+
+.sysreq-img{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(../images/requirements.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.text-sysreq{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container-sysreq{
+    margin-left: 5%;
+}
+
+#tabel td{
+    border: 1px solid darkgray;
+}
+
+.fs-1{
+    font-size: 80px !important;
+}
+
+.topscore-img{
+    background-image: url(../images/top-score-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.img-rounded{
+    width: 60px;
+    height: 60px;
+}
+
+.card{
+    width: 500px;
+    height: 200px !important;
+}
+
+.h-500{
+    height: 500px;
+}
+
+@media (max-width: 995px){
+    .h-500{
+        height: 200px;
+    }
+    
+    #container-sysreq{
+        width: 80%;
+    }
+
+    #text-topscore{
+        text-align: center;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+
+    .topscore-img{
+        background-size: cover;
+    }
+}
+
+@media (max-width: 615px){
+    body{
+        width: 100%;
+    }
+}
+
+
+.con-sysreq{
+    height: 70%;
+    /* width: 1500px; */
+}
+
+.h-fit{
+    height: fit-content !important;
+}
+
+.news-img{
+    background-image: url(../images/newsletter.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.skull-img{
+    height: 30rem;
+}
+
+#twittercard-img{
+    height: 2rem;
+    width:fit-content ;
+}
+
+.footer-fs {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+body{
+    background-color: black;
+}
+
+#btn-play{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,51 @@
+.userlist {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    background: white;
+    padding-bottom: 30px;
+}
+
+.custom-link {
+    color: black;
+    /* Default link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Transition effect for color change */
+}
+
+.custom-link:hover {
+    color: blue;
+    /* Change color to blue on hover */
+}
+
+/* UserList.css */
+
+/* Regular user list item */
+/* UserList.css */
+
+/* Regular user list item */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+  }
+  
+  .highlighted-user {
+    background-color: #ffd700; 
+  }
+  
+  .authenticated-text {
+    color: green;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+
+    

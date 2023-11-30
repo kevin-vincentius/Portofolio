@@ -1,0 +1,29 @@
+:root {
+    --foreground-rgb: white
+
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --foreground-rgb: white
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    background-image: url("https://nextui.org/gradient-right-dark.svg");
+    background-position: 1200px;
+    background-repeat: no-repeat;
+}
+
+.container1 {
+    display: flex;
+    height: 49rem;
+    justify-content: center;
+    align-items: center;
+}

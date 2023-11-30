@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 4</title>
+    <link href="stylesheets/styles-ch4.css" rel="stylesheet" />
+    <script src="javascript/script.js"></script>
+  </head>
+  <body>
+    <%- include("partials/header") -%>
+    <section>
+      <div class="container">
+        <div class="selections">
+          <h1>PLAYER 1</h1>
+          <div class="container-selection">
+            <img src="images/batu.png" class="selection" id="batu" />
+          </div>
+          <div class="container-selection">
+            <img src="images/kertas.png" class="selection" id="kertas" />
+          </div>
+          <div class="container-selection">
+            <img src="images/gunting.png" class="selection" id="gunting" />
+          </div>
+        </div>
+        <div class="font-text" id="result">VS</div>
+        <div class="selections">
+          <h1 class="">COM</h1>
+          <div class="container-selection">
+            <img src="images/batu.png" class="comselection" id="com-batu" />
+          </div>
+          <div class="container-selection">
+            <img
+              src="images/kertas.png"
+              class="comselection"
+              id="com-kertas"
+            />
+          </div>
+          <div class="container-selection">
+            <img
+              src="images/gunting.png"
+              class="comselection"
+              id="com-gunting"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container-refresh" id="refresh">
+          <img src="images/refresh.png" class="refreshbutton" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

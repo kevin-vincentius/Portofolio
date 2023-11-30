@@ -1,0 +1,21 @@
+notes: 
+1. di seeders ada data dummy 3 user: 1 untuk super admin dan 2 untuk playeruser. untuk password user sama seperti username
+2. untuk API nya semua berbasis postman kecuali yang register
+3. untuk register nya berbentuk UI dgn endpoint /register
+4. untuk collection postman nya sudah disediakan 
+
+alur bermain: 
+- superadmin login dan create room 
+- player 1 dan 2 login menggunakan token masing-masing
+- player 1 input pilihan di parameter user_input (P/R/S) dan dapat response username, message, array inputan player1 dan jumlah ronde 
+tersisa untuk match 
+- player 2 (sama seperti diatas) 
+- setelah inputan masing-masing player sudah 3, maka room akan ditutup dan server tidak akan menerima input lagi
+- pakai method GET untuk endpoint /fight/room_id untuk melihat result permainan
+- setelah match selesai, hasil permainan akan disimpan di tabel game_room dan user_game_history
+
+untuk authorization: 
+- register: hanya superadmin 
+- create room: hanya superadmin 
+- fight (POST /fight/room_id) : hanya playeruser 
+- fight result (GET /fight/room_id): playeruser
