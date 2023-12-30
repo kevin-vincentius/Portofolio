@@ -1,0 +1,11 @@
+.TodoWrapper {
+  /* background: ghostwhite; */
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.TodoWrapper h1{ 
+  color: black;
+}

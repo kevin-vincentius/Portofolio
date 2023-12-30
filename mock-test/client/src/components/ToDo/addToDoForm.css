@@ -1,0 +1,45 @@
+.TodoForm {
+  width: 100%;
+  background: ghostwhite;
+  border: 1px solid lightgrey;
+}
+
+.todo-input {
+  outline: none;
+  background: white;
+  color: black;
+  border: 2px solid darkturquoise;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.TodoForm button {
+  color: #fff;
+  border: none;
+  width: 200px;
+  margin-top: 20px;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.todo-input2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+}
+
